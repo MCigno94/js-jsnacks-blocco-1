@@ -8,7 +8,7 @@ let somma = 0;
 for (let i = 0; i < 10; i++) {
     numberUser = Number(prompt('Inserisci un numero'));
     console.log(numberUser);
-    somma = somma + numberUser;
+    somma += numberUser;
 }
 
 console.log(somma);
