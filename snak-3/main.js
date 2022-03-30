@@ -5,10 +5,10 @@ Il programma stampa la somma di tutti i numeri inseriti.
 
 let numberUser;
 let somma = 0;
-for (let i = 0; i < 10; i++) {
+for (let i = 1; i <= 10; i++) {
     numberUser = Number(prompt('Inserisci un numero'));
-    console.log(numberUser);
+    console.log(`n°${i}: ${numberUser}`);
     somma += numberUser;
 }
 
-console.log(somma);
+console.log(`La somma dei 10 numeri inseriti è: ${somma}`);
