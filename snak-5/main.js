@@ -9,7 +9,7 @@ let userNumber;
 for (let i = 0; i < 6; i++) {
 
     userNumber = parseInt(prompt('Inserisci un numero'));
-    if (userNumber % 2 == 0) {
+    if (userNumber % 2 == 1) {
         listNumber.push(userNumber);
     }
 }
