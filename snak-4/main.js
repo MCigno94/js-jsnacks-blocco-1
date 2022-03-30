@@ -7,8 +7,6 @@ let participantNames = ['Mario', 'Paolo', 'Alessia', 'Chiara'];
 let verifyName = false;
 let partecipant;
 
-
-
 for (let i = 0; i < participantNames.length; i++) {
     //console.log(participantNames[i]);
     partecipant = participantNames[i];
@@ -16,11 +14,10 @@ for (let i = 0; i < participantNames.length; i++) {
     if (userName == partecipant) {
         verifyName = true;
     };
-
 }
 
-if (verifyName == true) {
-    alert('Benvenuto alla festa');
+if (verifyName) {
+    alert(`Benvenuto ${userName}`);
 } else {
     alert('Mi spiace non potrai partecipare');
 };
