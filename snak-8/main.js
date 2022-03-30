@@ -6,7 +6,7 @@ e calcola la somma di tutte le cifre che compongono il numero.
 let userNumber = String(prompt('Inserisci un numero di 4 cifre'));
 let x;
 let somma = 0;
-if (parseInt(userNumber.length) !== 4) {
+if (parseInt(userNumber.length) !== 4 || isNaN(userNumber)) {
     alert('Il numero non corrisponde')
 
 } else {
@@ -18,6 +18,5 @@ if (parseInt(userNumber.length) !== 4) {
         somma += x;
 
     }
+    console.log(somma);
 }
-
-console.log(somma);
