@@ -14,7 +14,8 @@ if (parseInt(userNumber.length) !== 4 || isNaN(userNumber)) {
     for (let i = 0; i < userNumber.length; i++) {
         //console.log(userNumber.substring(i, i + 1));
 
-        x = parseInt(userNumber.substring(i, i + 1));
+        // x = parseInt(userNumber.substring(i, i + 1));
+        x = parseInt(userNumber[i]);
         somma += x;
 
     }
